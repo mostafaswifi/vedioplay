@@ -1,0 +1,168 @@
+
+@media (max-width: 1024px){
+    .buttons{
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 915px){
+    div.holder{
+        border-top: 1px solid var(--gray);
+        padding: 0;
+    }
+
+    .search-box{
+        padding: 1rem 0;
+        width: 100%;
+        border-bottom: 1px solid var(--gray);
+    }
+
+    div.buttons{
+        justify-content: start;
+    }
+
+    .aligner{
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 900px){
+    .search-box{
+        justify-content: center;
+    }
+    .logo{
+        border: none!important;
+    }
+}
+
+@media(max-width: 768px){
+    div.card-image{
+        height: 62vw;
+    }
+    aside{
+        transition: all 0.5s ease-in-out;
+        position: fixed;
+        left: -60%;
+        top: 0;
+        height: 100vh;
+        z-index: 20;
+        background-color: var(--lgray);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+}
+    div.burger{
+
+        top: 11%;
+        right: 8%;
+    }
+    div.burger:hover + aside{
+        left: 0;
+       
+    }
+}
+
+@media (max-width: 540px){
+    
+    .buttons{
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+    div.buttons div{
+        padding: 0.5rem;
+    }
+    .buttons div.heighter{
+        padding: 1.44rem 1.5rem;
+    }
+    div.u-p div{
+        padding: 0 0.5rem;
+    }
+    div.buttons .number{
+        padding: 0;
+    }
+}
+
+@media (max-width: 468px){
+    body{
+        padding: 1rem 0!important;
+    }
+    .search-box{
+        padding-left: 1rem;
+        justify-content: left;
+    }
+    div.u-p.flex{
+        padding: 0;
+    }
+}
+@media(max-width: 425px){
+    .card{
+        min-width: 365px!important;
+    }
+    .content{
+        margin: 0;
+    }
+    body{
+        background-image: none!important;
+    }
+}
+@media(max-width: 412px){
+ 
+
+    .aligner{
+        flex-grow: 1;
+        margin: auto;
+    }
+    .buttons div.heighter{
+        padding: 0;
+    }
+    .u-p{
+        justify-content: right;
+    }
+   
+}
+
+@media (max-width: 375px){
+    body{
+        width: 375px;
+        background-image: none!important;
+    }
+  .heighter{
+      border: none !important
+  }
+
+  .grapper{
+      width: 375px;
+  }
+
+  .content{
+      margin: 0!important;
+      padding: 0;
+  }
+  .card{
+      min-width: 342px!important;
+  }
+}
+
+@media (max-width: 320px){
+
+    .crad{
+        width: 90vw;
+    }
+    body{
+        margin: 0;
+        padding: 0!important;
+        width: 357px;
+    }
+
+    .content{
+        padding: 0!important;
+    }
+    
+    div.burger{
+
+        top: 9%;
+        right: -6%;
+    }
+}

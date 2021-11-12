@@ -1,0 +1,467 @@
+/* 
+=====================> index of project <=================
+[ 1 ] Vriables -------- resetters ------- import fonts -------- import media quieries
+[ 2 ] general classes [ font colors ---- background colors --- display felx --- directions --- text capitalize --- text lower case ]
+[ 3 ] nav-bar 
+[ 4 ] section  =======> [ 4 - 1 ] aside
+               =======> [ 4 - 2 ] content
+
+
+
+
+
+ */
+
+/* [ 1 ] start [ variables - resseters - fonts - media]===============================================================================================*/
+
+@import "quieries.css";
+
+:root {
+  --green: #549b7c;
+  --lgreen: #dbece6;
+  --gray: #c5c5c5;
+  --lgray: #efefef;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom right, #79c0c6, #b58ebd);
+  background-repeat: no-repeat;
+  padding: 1rem 1.5rem;
+  font-family: normal, courier;
+}
+
+ul li {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+ul li:hover {
+  background-color: var(--lgreen);
+  color: var(--green);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "normal";
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "bold";
+  src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "thin";
+  src: url(../assets/fonts/Roboto-Thin.ttf);
+}
+
+/* [ 1 ] end [ variables - resseters - fonts - media]==================================================================================================*/
+
+/* [ 2 ] general classes [ font colors ---- bg colors --- felx --- directions --- capitalize --- lower]=============================================== */
+
+.back-green {
+  background-color: var(--green);
+}
+
+.back-lgreen {
+  background-color: var(--lgreen);
+}
+
+.back-lgray {
+  background-color: var(--lgray);
+}
+
+.back-white {
+  background-color: white;
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.text-white {
+  color: white;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.capitalizer {
+  text-transform: capitalize;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.border-left {
+  border-left: 1px solid var(--gray);
+}
+
+.border-right {
+  border-right: 1px solid var(--gray);
+}
+
+.border-top {
+  border-top: 1px solid var(--gray);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--gray);
+}
+/* [ 2 ] end general classes [ font colors ---- bg colors --- felx --- directions --- capitalize --- lower]=========================================== */
+
+/* [ 3 ] nav-bar ===================================================================================================================================== */
+.container {
+  flex-direction: column;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.nav-bar {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.holder {
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 0 0 0 2vw;
+}
+
+.logo {
+  padding: 1rem;
+  font-size: x-large;
+  width: 168px;
+}
+
+.search-box {
+  align-items: center;
+}
+
+.search-box #search {
+  margin-left: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+input#search::placeholder {
+  color: var(--gray);
+}
+
+.buttons {
+  font-size: small;
+  align-items: center;
+}
+
+.buttons div {
+  padding: 0 1rem;
+}
+
+.buttons div span {
+  font-weight: bold;
+  font-size: 0.75rem;
+  letter-spacing: 0.75px;
+}
+/* .buttons   div:nth-child(2){
+    padding: 1.44rem;
+} */
+div.heighter {
+  padding: 1.44rem 1.5rem;
+  position: relative;
+}
+
+.u-p {
+  align-items: center;
+}
+
+.u-p div {
+  align-items: center;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.u-p div span {
+  padding: 0.5rem;
+}
+
+div.number {
+  padding: 0rem;
+  position: absolute;
+  top: 33%;
+  left: 63%;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#nViews {
+  position: absolute;
+  font-size: xx-small;
+  top: 50%;
+  right: 28%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+}
+/*end [ 3 ] nav-bar ================================================================================================================================== */
+
+/* [ 4 ] section  =======> [ 4 - 1 ] aside =========================================================================================================== */
+.container2 {
+  width: 100%;
+}
+aside {
+  width: 200px;
+}
+.user {
+  width: 100%;
+}
+.grapper {
+  flex-grow: 1;
+}
+
+.burger {
+  position: absolute;
+  top: -100%;
+  right: 7%;
+}
+.profil {
+  overflow: hidden;
+  align-self: baseline;
+  width: 50px;
+  height: 50px;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+.profil img {
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  align-self: baseline;
+}
+.private li {
+  justify-content: space-between;
+}
+
+.links li span {
+  font-size: smaller;
+}
+.info {
+  color: black;
+}
+
+.info h5 {
+  margin: 0.5rem;
+}
+.info span {
+  margin: 0.5rem;
+}
+.thumb {
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 1rem;
+}
+
+.invite {
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  padding: 1rem 0.5rem;
+  align-self: center;
+  justify-content: center;
+  margin: auto auto 1.5rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* end [ 4 ] section  =======> [ 4 - 1 ] aside ======================================================================================================= */
+
+/* [ 4 ] section  =======> [ 4 - 2 ] content ========================================================================================================= */
+
+.content {
+  flex-grow: 1;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  width: min-content;
+}
+
+.new-uploads {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.next,
+.previous {
+  cursor: pointer;
+  margin: 0 0.25rem;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  padding: 0.5rem;
+  background-color: var(--green);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.hero {
+  position: relative;
+  border-radius: 5px;
+  width: 100%;
+  height: 16rem;
+  background-image: url(../assets/imgs/t1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.text-holder {
+  margin: 2rem;
+}
+
+.new-uploads {
+  margin-bottom: 1rem;
+}
+
+.cards {
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card {
+  margin: 0 0.3rem;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  /* width: calc(100% / 4.2); */
+  min-width: 325px;
+  box-shadow: 2px 2px 3px var(--lgray), -2px 2px 3px var(--lgray);
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.card h5 {
+  margin: 0.25rem 0;
+}
+.card-image {
+  position: relative;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img1 {
+  background-image: url(../assets/imgs/t2.jpg);
+}
+#img2 {
+  background-image: url(../assets/imgs/t3.jpg);
+}
+#img3 {
+  background-image: url(../assets/imgs/t4.jpg);
+}
+#img4 {
+  background-image: url(../assets/imgs/t5.jpg);
+}
+#img5 {
+  background-image: url(../assets/imgs/t6.jpg);
+}
+#img6 {
+  background-image: url(../assets/imgs/t7.jpg);
+}
+#img7 {
+  background-image: url(../assets/imgs/t8.jpg);
+}
+#img8 {
+  background-image: url(../assets/imgs/t9.jpg);
+}
+.play {
+  cursor: pointer;
+  padding-top: 0.5rem;
+  text-align: center;
+  box-shadow: 2px 2px 3px var(--lgray), -2px 2px 3px var(--lgray);
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  width: 38px;
+  height: 30px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.card-info {
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+}
+
+.trending {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* end [ 4 ] section  =======> [ 4 - 2 ] content ===================================================================================================== */
