@@ -55,7 +55,7 @@
 }
     div.burger{
 
-        top: 11%;
+        top: 91px;
         right: 8%;
     }
     div.burger:hover + aside{
@@ -105,6 +105,25 @@
     }
     body{
         background-image: none!important;
+    }
+    ul li{
+        padding: 0.5rem!important;
+    }
+    aside{
+        height: 100%;
+    }
+    div.invite{
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+
+    }
+
+    div.thumb{
+        margin: 0;
+        justify-content: space-around;
+    }
+    aside{
+        justify-content: center;
     }
 }
 @media(max-width: 412px){
@@ -162,7 +181,10 @@
     
     div.burger{
 
-        top: 9%;
+        top: 80px;
         right: -6%;
+    }
+    .trending,.new-uploads{
+        padding: 0.25rem!important;
     }
 }
